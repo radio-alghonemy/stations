@@ -1,0 +1,25 @@
+name: daily-station-check
+on:
+  schedule:
+    - cron: '23 3 * * *'   # 03:23 UTC daily (off the top of the hour)
+  workflow_dispatch:        # manual run from the Actions tab
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: run checker
+        run: python3 checker.py
+      - name: commit results
+        run: |
+          git config user.name "station-checker"
+          git config user.email "station-checker@users.noreply.github.com"
+          git add overlay.json version.json health.json
+          git diff --cached --quiet || git commit -m "daily link check"
+          git push
