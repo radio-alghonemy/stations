@@ -8,7 +8,8 @@ after 3 consecutive daily failures with no working replacement found.
 Geo-restricted hosts (e.g. onlinehorizons.net, Egypt-only) are never probed or
 auto-replaced: their state is human-managed.
 """
-import json, re, sys, time, urllib.request, urllib.parse, http.client
+import json
+import os, re, sys, time, urllib.request, urllib.parse, http.client
 from concurrent.futures import ThreadPoolExecutor
 
 UA = {'User-Agent': 'Mozilla/5.0 (Linux; Android) RadioArab-checker/1.0'}
@@ -65,7 +66,11 @@ def find_replacement(name, country_en):
     return None
 
 def main():
-    stations = json.load(open('all-stations.min.json'))
+    if os.path.exists('all-stations.min.json'):
+        stations = json.load(open('all-stations.min.json'))
+    else:
+        import gzip
+        stations = json.load(gzip.open('all-stations.min.json.gz', 'rt', encoding='utf-8'))
     try: overlay = json.load(open('overlay.json'))
     except Exception: overlay = {'version': 0, 'replace': [], 'remove': []}
     try: health = json.load(open('health.json'))
