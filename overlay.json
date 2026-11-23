@@ -1,1 +1,66 @@
-{"version":1,"replace":[],"remove":[]}
+{
+ "version": 2,
+ "replace": [
+  {
+   "id": "Egypt|OmniRadio - Sheikh Mahmoud Ali Al-Banna (الشيخ محمود علي البنا)",
+   "alt_urls": [
+    "https://qurango.net/radio/mahmoud_ali__albanna"
+   ]
+  },
+  {
+   "id": "Egypt|OmniRadio - Sheikh Abdulbasit Abdulsamad (الشيخ عبد الباسط عبد الصمد)",
+   "alt_urls": [
+    "https://qurango.net/radio/abdulbasit_abdulsamad"
+   ]
+  },
+  {
+   "id": "Egypt|OmniRadio - Holy Quran Radio Cairo (إذاعة القرآن الكريم (القاهرة))",
+   "alt_urls": [
+    "https://stream.radiojar.com/8s5u5tpdtwzuv"
+   ]
+  },
+  {
+   "id": "Egypt|OmniRadio - Sheikh Mahmoud Khalil Al-Hussary (الشيخ محمود خليل الحصري)",
+   "alt_urls": [
+    "https://qurango.net/radio/mahmoud_khalil_alhussary"
+   ]
+  },
+  {
+   "id": "Egypt|OmniRadio - Sheikh Mishary Rashid Al-Afasy (الشيخ مشاري بن راشد العفاسي)",
+   "alt_urls": [
+    "https://qurango.net/radio/mishary_alafasi"
+   ]
+  },
+  {
+   "id": "Egypt|OmniRadio - Abu Bakr Al-Shatri (أبوبكر الشاطري)",
+   "alt_urls": [
+    "https://qurango.net/radio/shaik_abu_bakr_al_shatri"
+   ]
+  },
+  {
+   "id": "Egypt|OmniRadio - Sheikh Mohammed Siddiq Al-Minshawi (الشيخ محمد صديق المنشاوي)",
+   "alt_urls": [
+    "https://qurango.net/radio/mohammed_siddiq_alminshawi"
+   ]
+  },
+  {
+   "id": "Egypt|OmniRadio - SHEIKH AdelRayan (الشيخ عادل ريان)",
+   "alt_urls": [
+    "https://qurango.net/radio/adel_ryyan"
+   ]
+  },
+  {
+   "id": "Egypt|OmniRadio - Salah Bukhatir (صلاح بوخاطر)",
+   "alt_urls": [
+    "https://qurango.net/radio/slaah_bukhatir"
+   ]
+  },
+  {
+   "id": "Egypt|OmniRadio - Sheikh Bandar Balila (الشيخ بندر بليلة)",
+   "alt_urls": [
+    "https://qurango.net/radio/bandar_balilah"
+   ]
+  }
+ ],
+ "remove": []
+}
